@@ -1,8 +1,17 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <script src="https://auth.roblox.com/v1/javascript/ roblox.js"></script>
-  </body>
-</html>
+<head>
+  <title>Roblox Login Example</title>
+</head>
+<body>
+  <button id="login-button">Login with Roblox</button>
+  <script src="https://auth.roblox.com/v1/javascript/roblox.js"></script>
+  <script>
+    const loginButton = document.getElementById('login-button');
 
+    loginButton.addEventListener('click', () => {
+      Roblox.login({ redirectUri: 'http://YOUR_GITHUB_PAGES_URL/callback' });
+    });
+  </script>
+</body>
+</html>
