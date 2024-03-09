@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCR Purchasing System</title>
+    <title>Sign In | NPS</title>
+    <style>
+
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh; 
+        }
+
+        .left-side {
+            flex: 1; 
+            background-image: url('image.jfif'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right-side {
+            flex: 1; 
+            background-color: #222222; 
+            color: #fff; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: rgb(34, 34, 34);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
-  <p>This site is under construction. We are too busy implementing Roblox OAuth 2.0 !!</p>
- <a href="https://auth.roblox.com/v2/login?client_id=5872705697419500284&redirect_uri=https://nps-ncr-purchasing-system.pages.dev/&response_type=code&scope=openid">
-        <button>Login with Roblox</button>
-    </a>
+    <div class="container">
+        <div class="left-side"></div>
+        <div class="right-side">
+            <h1>👋 Hey!</h1>
+            <p>Welcome to NPS (NCR Purchasing System), please login with roblox to continue.</p>
+            <button class="button">Login with Roblox</button>
+        </div>
+    </div>
 </body>
 </html>
